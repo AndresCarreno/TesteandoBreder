@@ -7,6 +7,25 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="wena">
+        <h3>WENA CHUCHETUMARE</h3>
+        <input type="text" id="name"> dime como te llamas
+        <button onclick="respuesta()">Respuesta</button>
+    </div>
+    <div id="answer"></div>
     
 </body>
+<footer>
+    <script>
+        var wena = document.getElementById("wena");
+        var resp = document.getElementById("answer");
+
+        function respuesta(){
+            let respuesta = document.getElementById("name").value;
+            resp.innerHTML = "ta seguro q se llama " +  respuesta + "?";
+        }
+
+
+    </script>
+</footer>
 </html>
